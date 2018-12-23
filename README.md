@@ -1,7 +1,7 @@
 # text-classification-character-cnn
 基于字符级别的textCNN中文文本分类
 
-#**训练方法**
+##**训练方法**
 python run_cnn.py --help
 可查看参数设置，均为可选参数，默认值在run_cnn.py中
 默认执行trian
@@ -26,7 +26,7 @@ optional arguments:
   --save_path SAVE_PATH
                         最佳验证结果保存路径
 ```
-#**验证方法**
+##**验证方法**
 python run_cnn.py --mode=test
 ```
 Testing...
@@ -75,7 +75,7 @@ Confusion Matrix...
 Time usage: 0:00:03
 ```
 
-#**预测方法**
+##**预测方法**
 python predict.py --help
 ```
 usage: predict.py [-h] [--predict_sentence PREDICT_SENTENCE]
@@ -103,15 +103,10 @@ optional arguments:
 例如：python predict.py --predict_sentence='凡亚比 OTG转接头Type-c转USB适用小米6华为P9乐视数据线手机U盘连接转换头器
 '
 ```
-2018-12-23 21:33:57.936838: I T:\src\github\tensorflow\tensorflow\core\platform\cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2
-2018-12-23 21:33:58.092847: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1392] Found device 0 with properties:
-name: GeForce GTX 1060 6GB major: 6 minor: 1 memoryClockRate(GHz): 1.7085
-pciBusID: 0000:01:00.0
-totalMemory: 6.00GiB freeMemory: 4.97GiB
-2018-12-23 21:33:58.105937: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1471] Adding visible gpu devices: 0
-2018-12-23 21:33:58.736640: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
-2018-12-23 21:33:58.744072: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:958]      0
-2018-12-23 21:33:58.749002: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:971] 0:   N
-2018-12-23 21:33:58.753820: I T:\src\github\tensorflow\tensorflow\core\common_runtime\gpu\gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4734 MB memory) -> physical GPU (device: 0, name: GeForce GTX 1060 6GB, pci bus id: 0000:01:00.0, compute capability: 6.1)
 3C数码配件
+```
+预测整个txt文件：
+python predict.py
+```
+预测结束 文件位置： data/products/products.predict_result.csv
 ```
