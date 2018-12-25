@@ -1,7 +1,7 @@
 # text-classification-character-cnn
 基于字符级别的textCNN中文文本分类
 
-# **训练方法**
+## **训练方法**
 python run_cnn.py --help
 可查看参数设置，均为可选参数，默认值在run_cnn.py中
 默认执行trian
@@ -26,7 +26,7 @@ optional arguments:
   --save_path SAVE_PATH
                         最佳验证结果保存路径
 ```
-# **验证方法**
+## **验证方法**
 python run_cnn.py --mode=test
 ```
 Testing...
@@ -75,7 +75,7 @@ Confusion Matrix...
 Time usage: 0:00:03
 ```
 
-# **预测方法**
+## **预测方法**
 python predict.py --help
 ```
 usage: predict.py [-h] [--predict_sentence PREDICT_SENTENCE]
